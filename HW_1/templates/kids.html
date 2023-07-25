@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="../static/css/other.css">
+
+{% extends 'base.html' %}
+
+{% block page_title %}
+KIDS
+{% endblock %}
+
+{% block navigation %}
+<a href="http://localhost:5000/" class="nav__link">Back to main page...</a>
+{% endblock %}
+
+{% block content %}
+<section class="main__content">
+    <a href="http://localhost:5000/kids/" class="main__img__link">
+        <div class="image__and__name">
+            <img src="../static/image/kids_jacket.webp" alt="jackets" class="image">
+            <h2 class="subtitle">JACKETS</h2>
+        </div>
+    </a>
+    <a href="http://localhost:5000/kids/" class="main__img__link">
+        <div class="image__and__name">
+            <img src="../static/image/kids_shirt.webp" alt="shirts" class="image">
+            <h2 class="subtitle">SHIRTS</h2>
+        </div>
+    </a>
+    <a href="http://localhost:5000/kids/" class="main__img__link">
+        <div class="image__and__name">
+            <img src="../static/image/kids_jeans.webp" alt="jeans" class="image">
+            <h2 class="subtitle">JEANS</h2>
+        </div>
+    </a>
+</section>
+
+{% endblock %}

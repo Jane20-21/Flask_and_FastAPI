@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="../static/css/other.css">
+
+{% extends 'base.html' %}
+
+{% block page_title %}
+Main page
+{% endblock %}
+
+{% block navigation %}
+<a href="http://localhost:5000/man/" class="nav__link">MAN</a>
+<a href="http://localhost:5000/woman/" class="nav__link">WOMAN</a>
+<a href="http://localhost:5000/kids/" class="nav__link">KIDS</a>
+{% endblock %}
+
+{% block content %}
+<section class="main__content">
+    <a href="http://localhost:5000/man/" class="main__img__link">
+        <div class="image__and__name">
+            <img src="../static/image/man_main.webp" alt="man" class="image">
+            <h2 class="subtitle">MAN</h2>
+        </div>
+    </a>
+    <a href="http://localhost:5000/woman/" class="main__img__link">
+        <div class="image__and__name">
+            <img src="../static/image/woman_main.webp" alt="woman" class="image">
+            <h2 class="subtitle">WOMAN</h2>
+        </div>
+    </a>
+    <a href="http://localhost:5000/kids/" class="main__img__link">
+        <div class="image__and__name">
+            <img src="../static/image/kids_main.webp" alt="kids" class="image">
+            <h2 class="subtitle">KIDS</h2>
+        </div>
+    </a>
+</section>
+
+{% endblock %}

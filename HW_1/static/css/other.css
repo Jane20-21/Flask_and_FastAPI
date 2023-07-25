@@ -1,0 +1,25 @@
+.nav__link {
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__img__link {
+    text-decoration: none;
+    color: black;
+}
+
+.image__and__name {
+    width: 400px;
+    height: 450px;
+}
+
+.image {
+    height: 450px;
+}

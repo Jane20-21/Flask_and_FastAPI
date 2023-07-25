@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block page_title %}
+        My site
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <section class="main center">
+        <header class="base__header">
+            <section class="logo__and__title">
+                <a href="http://localhost:5000/" class="logo"><img src="../static/image/paperbag2-juliane-krug.svg"
+                        alt="logo"></a>
+                <h1 class="title">
+                    MY STORE
+                </h1>
+            </section>
+            <nav class="base__nav">
+                {% block navigation %}
+                My navigation
+                {% endblock %}
+            </nav>
+        </header>
+        <main class="base__main">
+            {% block content %}
+            My content
+            {% endblock %}
+        </main>
+        <footer class="base__footer">
+            <p class="copyright">Something copyright 2023.</p>
+        </footer>
+
+    </section>
+</body>
+
+</html>
